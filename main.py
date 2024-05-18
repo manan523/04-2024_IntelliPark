@@ -12,7 +12,7 @@ model=YOLO('trained.pt')
 def calc_diff(im1,im2):
     return np.abs(np.mean(im1) - np.mean(im2))
 
-video_path = "./data/parking_1920_1080_loop.mp4"
+video_path = "./parking_1920_1080.mp4"
 mask_path = "./mask.png"
 
 mask= cv2.imread(mask_path,0)   # 0 is for color mode => GrayScale
